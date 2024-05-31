@@ -11,8 +11,6 @@ COPY . /app
 #Installing necessary dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
-
 #Make port available to  the world outside the container. Port (Python=5000)
 EXPOSE 5000
 
